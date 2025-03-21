@@ -9,7 +9,7 @@ from pathlib import Path
 SITEMAP_INDEX_URL = "https://yetitravels.com/sitemap_index.xml"
 
 # Define the output directory and file
-OUTPUT_DIR = Path("/home/nischalacharya/Documents/Tourism_Pipeline/dags/Output/")
+OUTPUT_DIR = Path("/home/nischalacharya/Documents/Pipeline/airflow/dags/Output_JSON")
 OUTPUT_FILE = OUTPUT_DIR / "yetitravels_content.json"
 
 # Ensure the output directory exists
