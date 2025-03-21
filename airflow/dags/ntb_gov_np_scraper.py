@@ -13,7 +13,7 @@ HEADERS = {
 }
 CRAWL_DELAY = 3  # Seconds between requests
 MAX_PAGES = 250  # Maximum number of pages to scrape
-OUTPUT_DIR = Path('/home/nischalacharya/Documents/Tourism_Pipeline/dags/Output/')
+OUTPUT_DIR = Path('/home/nischalacharya/Documents/Pipeline/airflow/dags/Output_JSON')
 OUTPUT_FILE = OUTPUT_DIR / 'ntb_gov_np_content.json'
 
 # Ensure the output directory exists
