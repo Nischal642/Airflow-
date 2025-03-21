@@ -12,7 +12,7 @@ HEADERS = {
     'User-Agent': 'MosaicScraper/1.0 (+https://example.com/scraper)'
 }
 CRAWL_DELAY = 2  # Seconds between requests
-OUTPUT_DIR = '/home/nischalacharya/Documents/Tourism_Pipeline/dags/Output'
+OUTPUT_DIR = '/home/nischalacharya/Documents/Pipeline/airflow/dags/Output_JSON'
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, 'nepalTrekRoute.json')
 
 def ensure_directory_exists(directory):
