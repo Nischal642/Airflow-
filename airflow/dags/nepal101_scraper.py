@@ -10,7 +10,7 @@ from pathlib import Path
 # Configurations
 BASE_URL = 'https://www.nepal101.net/'
 SITEMAP_URL = 'https://www.nepal101.net/sitemaps.xml'
-OUTPUT_DIR = Path('/home/nischalacharya/Documents/Tourism_Pipeline/dags/Output')
+OUTPUT_DIR = Path('/home/nischalacharya/Documents/Pipeline/airflow/dags/Output_JSON')
 OUTPUT_FILE = OUTPUT_DIR / 'nepal101_content.json'
 CRAWL_DELAY = (1, 2)
 USER_AGENTS = [
