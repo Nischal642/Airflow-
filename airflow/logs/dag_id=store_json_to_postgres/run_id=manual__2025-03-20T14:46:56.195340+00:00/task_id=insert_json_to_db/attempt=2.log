@@ -1,0 +1,33 @@
+[2025-03-20T14:49:29.114+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-20T14:49:29.147+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: store_json_to_postgres.insert_json_to_db manual__2025-03-20T14:46:56.195340+00:00 [queued]>
+[2025-03-20T14:49:29.168+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: store_json_to_postgres.insert_json_to_db manual__2025-03-20T14:46:56.195340+00:00 [queued]>
+[2025-03-20T14:49:29.170+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-03-20T14:49:29.200+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): insert_json_to_db> on 2025-03-20 14:46:56.195340+00:00
+[2025-03-20T14:49:29.214+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=195) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-03-20T14:49:29.217+0000] {standard_task_runner.py:72} INFO - Started process 204 to run task
+[2025-03-20T14:49:29.216+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'store_json_to_postgres', 'insert_json_to_db', 'manual__2025-03-20T14:46:56.195340+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/store_json_to_postgres.py', '--cfg-path', '/tmp/tmp0dab365v']
+[2025-03-20T14:49:29.220+0000] {standard_task_runner.py:105} INFO - Job 41: Subtask insert_json_to_db
+[2025-03-20T14:49:29.246+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-03-20T14:49:29.317+0000] {task_command.py:467} INFO - Running <TaskInstance: store_json_to_postgres.insert_json_to_db manual__2025-03-20T14:46:56.195340+00:00 [running]> on host 9806377edd76
+[2025-03-20T14:49:29.490+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='store_json_to_postgres' AIRFLOW_CTX_TASK_ID='insert_json_to_db' AIRFLOW_CTX_EXECUTION_DATE='2025-03-20T14:46:56.195340+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-20T14:46:56.195340+00:00'
+[2025-03-20T14:49:29.492+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-20T14:49:29.575+0000] {store_json_to_postgres.py:27} INFO - Checking file: /opt/***/Output/Nepal_Profile.json
+[2025-03-20T14:49:29.587+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2025-03-20T14:49:30.947+0000] {store_json_to_postgres.py:41} INFO - Total records to insert: 4683
+[2025-03-20T14:49:31.211+0000] {store_json_to_postgres.py:55} INFO - Inserted batch 1 (500 records)
+[2025-03-20T14:49:31.471+0000] {store_json_to_postgres.py:55} INFO - Inserted batch 2 (500 records)
+[2025-03-20T14:49:31.869+0000] {store_json_to_postgres.py:55} INFO - Inserted batch 3 (500 records)
+[2025-03-20T14:49:32.250+0000] {store_json_to_postgres.py:55} INFO - Inserted batch 4 (500 records)
+[2025-03-20T14:49:32.636+0000] {store_json_to_postgres.py:55} INFO - Inserted batch 5 (500 records)
+[2025-03-20T14:49:32.956+0000] {store_json_to_postgres.py:55} INFO - Inserted batch 6 (500 records)
+[2025-03-20T14:49:33.442+0000] {store_json_to_postgres.py:55} INFO - Inserted batch 7 (500 records)
+[2025-03-20T14:49:33.677+0000] {store_json_to_postgres.py:55} INFO - Inserted batch 8 (500 records)
+[2025-03-20T14:49:34.095+0000] {store_json_to_postgres.py:55} INFO - Inserted batch 9 (500 records)
+[2025-03-20T14:49:34.231+0000] {store_json_to_postgres.py:55} INFO - Inserted batch 10 (183 records)
+[2025-03-20T14:49:34.231+0000] {store_json_to_postgres.py:60} INFO - Successfully inserted all data into PostgreSQL!
+[2025-03-20T14:49:34.236+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-20T14:49:34.253+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-20T14:49:34.255+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=store_json_to_postgres, task_id=insert_json_to_db, run_id=manual__2025-03-20T14:46:56.195340+00:00, execution_date=20250320T144656, start_date=20250320T144929, end_date=20250320T144934
+[2025-03-20T14:49:34.328+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-20T14:49:34.351+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-20T14:49:34.354+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
