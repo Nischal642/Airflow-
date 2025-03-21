@@ -8,7 +8,7 @@ from pathlib import Path
 
 # Configuration
 BASE_URL = 'https://www.yaccatravels.com/'
-OUTPUT_DIR = Path('/home/nischalacharya/Documents/Tourism_Pipeline/dags/Output/')
+OUTPUT_DIR = Path('/home/nischalacharya/Documents/Pipeline/airflow/dags/Output_JSON')
 OUTPUT_FILE = OUTPUT_DIR / 'yaccatravels_content.json'
 CRAWL_DELAY = (2, 3)  # Random delay between requests
 USER_AGENTS = [
