@@ -10,7 +10,7 @@ from pathlib import Path
 # Configuration
 BASE_URL = 'https://www.bookmundi.com/y/nepal'
 SITEMAP_URL = 'https://assets.bookmundi.com/sitemaps/sitemap.xml'
-OUTPUT_FILE = '/home/nischalacharya/Documents/Tourism_Pipeline/dags/Output/bookmundi_nepal_content.json'
+OUTPUT_FILE = '/home/nischalacharya/Documents/Pipeline/airflow/dags/Output_JSON/bookmundi_nepal_content.json'
 CRAWL_DELAY = (5, 8)  # Randomized delay between requests
 USER_AGENTS = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
