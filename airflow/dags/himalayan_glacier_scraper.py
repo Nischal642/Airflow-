@@ -13,7 +13,7 @@ HEADERS = {
 }
 CRAWL_DELAY = 5  # Seconds between requests
 SITEMAP_URL = 'https://www.himalayanglacier.com/sitemap_index.xml'
-OUTPUT_FILE = '/home/nischalacharya/Documents/Tourism_Pipeline/dags/Output/himalayan_glacier_content.json'
+OUTPUT_FILE = '/home/nischalacharya/Documents/Pipeline/airflow/dags/Output_JSON/himalayan_glacier_content.json'
 
 def is_allowed(url):
     """Hardcoded robots.txt rules for himalayanglacier.com"""
