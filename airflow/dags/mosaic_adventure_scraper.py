@@ -13,7 +13,7 @@ HEADERS = {
 }
 CRAWL_DELAY = 1  # Seconds between requests
 SITEMAP_URL = 'https://mosaicadventure.com/sitemap_index.xml'
-OUTPUT_FILE = '/home/nischalacharya/Documents/Tourism_Pipeline/dags/Output/mosaic_adventure_content.json'
+OUTPUT_FILE = '/home/nischalacharya/Documents/Pipeline/airflow/dags/Output_JSON/mosaic_adventure_content.json'
 
 def is_allowed(url):
     """Hardcoded robots.txt rules for mosaicadventure.com"""
